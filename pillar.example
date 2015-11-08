@@ -69,6 +69,9 @@ snmp:
     # v3 users for read-only
     rousers:
       - username: 'myv3user'
+        # seclevel: noauth
+        # seclevel: auth
+        seclevel: priv
         view: all
         # authproto: 'SHA'
         authpassphrase: 'myv3password'
@@ -77,6 +80,9 @@ snmp:
     # v3 users for read-write
     rwusers:
       - username: 'myv3user_rw'
+        # seclevel: noauth
+        # seclevel: auth
+        seclevel: priv
         view: all
         # authproto: 'SHA'
         authpassphrase: 'myv3password'
